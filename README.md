@@ -42,17 +42,17 @@ Les fonctionnalités suivantes doivent encore être développées :
 <li>Suggestion de contenus personnalisés (dashboard)</li>
 <li>Réalisation de dossiers documentaires</li>
 <li>Affichage d’épisodes aléatoires</li>
-<li>Epuration de la base de données</li>
-<li>Epuration du code</li>
+<li>Epuration de la base de données - En cours</li>
+<li>Epuration du code - En cours</li>
 <li>Fin d'élaboration du CRUD (Update et Delete) - En cours</li>
 <li>Réalisation ou choix d’un thésaurus</li>
 <li>Réalisation ou choix d’une classification</li>
-<li>Implémentation d’un format de fichier xml lié aux épisodes</li>
+<li>Implémentation d’un format de fichier xml lié aux épisodes (Création et lecture)</li>
 <li>Implémentation d’une fonctionnalité d’export de notice</li>
 <li>Intégration d’un player digne de ce nom</li>
-<li>Implémentation d’un chapitrage</li>
+<li>Implémentation d’un chapitrage (En format XML)</li>
 <li>Implémentation d’une fonctionnalité Speech-To-Text</li>
-<li>Implémentation d’une fonctionnalité bibliographique</li>
+<li>Implémentation d’une fonctionnalité de référence bibliographique standard pour les épisodes</li>
 <li>Développement graphique de la plateforme web</li>
 <li>Logo</li>
 </ul>
@@ -62,12 +62,11 @@ Les fonctionnalités suivantes doivent encore être développées :
 Outre l'aspect de programmation, nous mettrons également incessament sous peu une modélisation de la db (schéma E-A et relationnel) attachée au projet ainsi que des diagrammes de cas d'utilisations, classes, etc. 
 
 <h2>Perspective de développement</h2>
-Indépendamment des fonctionnalités listées ci-dessus, nous souhaitons porter ce projet à un niveau supérieur en y intégrant quelques-unes des préoccupations suivantes :
+Indépendamment des fonctionnalités listées ci-dessus, nous souhaitons porter ce projet à un niveau supérieur en y intégrant quelques-unes des préoccupations suivantes (liste non-exhaustive) :
 
 <ul>
 <li>Prise en compte des podcasts vidéos</li>
 <li>Mise en place d'une communauté de catalographie et d'indexation</li>
-<li>Liste non-exhaustive</li>
 </ul>
 
 <h2>Contact</h2>
