@@ -43,6 +43,8 @@ Les fonctionnalités suivantes doivent encore être développées :
 <li>Réalisation de dossiers documentaires</li>
 <li>Affichage d’épisodes aléatoires</li>
 <li>Epuration de la base de données</li>
+<li>Epuration du code</li>
+<li>Fin d'élaboration du CRUD (Update et Delete) - En cours</li>
 <li>Réalisation ou choix d’un thésaurus</li>
 <li>Réalisation ou choix d’une classification</li>
 <li>Implémentation d’un format de fichier xml lié aux épisodes</li>
@@ -57,7 +59,7 @@ Les fonctionnalités suivantes doivent encore être développées :
 
 --> Si vous avez des compétences en PHP, SQL, CSS, etc. n'hésitez pas à ajouter une des fonctionnalité listée ci-dessus. (Cette liste sera régulièrement mise à jour en fonction de l'avancement du projet mais aussi des suggestions de la communauté).
 
-Outre l'aspect de programmation, nous mettrons également incessament sous peu une modélisation de la db (schéma E-A et relationnel) attachée au projet ainsi que des diagrammes de cas d'utilisations, séquençages, etc. 
+Outre l'aspect de programmation, nous mettrons également incessament sous peu une modélisation de la db (schéma E-A et relationnel) attachée au projet ainsi que des diagrammes de cas d'utilisations, classes, etc. 
 
 <h2>Perspective de développement</h2>
 Indépendamment des fonctionnalités listées ci-dessus, nous souhaitons porter ce projet à un niveau supérieur en y intégrant quelques-unes des préoccupations suivantes :
