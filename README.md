@@ -68,6 +68,7 @@ Indépendamment des fonctionnalités listées ci-dessus, nous souhaitons porter 
 <ul>
 <li>Prise en compte des podcasts vidéos</li>
 <li>Mise en place d'une communauté de catalographie et d'indexation</li>
+<li>Relais du contenu créer par des institutions sans flux RSS (activités enregistrées des bibliothèques publiques, etc.</li>
 </ul>
 
 <h2>Contact</h2>
