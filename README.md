@@ -46,6 +46,7 @@ Les fonctionnalités suivantes doivent encore être développées :
 <li>Epuration du code - En cours</li>
 <li>Fin d'élaboration du CRUD (Update et Delete) - En cours</li>
 <li>Réalisation ou choix d’un thésaurus</li>
+<li>Solutionner le problème de lecture de plusieurs mots-clés</li>
 <li>Réalisation ou choix d’une classification</li>
 <li>Implémentation d’un format de fichier xml lié aux épisodes (Création et lecture)</li>
 <li>Implémentation d’une fonctionnalité d’export de notice</li>
