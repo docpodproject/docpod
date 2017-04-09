@@ -24,15 +24,15 @@ Abstract class Requete {
 
 			$result = "<h3>Episode(s) trouvé(s)</h3>";
 			$countreq = 0;
-			$result .= "<ul>";
+			//$result .= "<ul>";
 			while ($row = $request->fetch(PDO::FETCH_ASSOC)){
 				$countreq++;
 				$consult = $row["Id_Epi"];
-				$result .= "<li>" . $row["Titre_Epi"] . " : " . $row["Description_Epi"] . "</li>";
+				$result .= "<p>" . $row["Titre_Epi"] . " : " . $row["Description_Epi"] . "</p>";
 				$result .= "<a href='index.php?p=player&episode_id=$consult'>Consulter l'épisode</a>";
 
 			}
-			$result .= "</ul>";
+			//$result .= "</ul>";
 			$result .= "<p>Nous avons trouvé <b>". $countreq ."</b> résultat(s).</p>";
 			return $result;
 
@@ -94,15 +94,15 @@ Abstract class Requete {
 
 			$result = "<h3>Emission(s) trouvée(s)</h3>";
 			$countreq = 0;
-			$result .= "<ul>";
+			//$result .= "<ul>";
 			while ($row = $request->fetch(PDO::FETCH_ASSOC)){
 				$countreq++;
 				$consult = $row["Id_Emi"];
-				$result .= "<li>" . $row["Titre_Emi"] . " : " . $row["Description_Emi"] . "</li>";
+				$result .= "<p>" . $row["Titre_Emi"] . " : " . $row["Description_Emi"] . "</p>";
 				$result .= "<a href='index.php?p=player&emission_id=$consult'>Consulter l'émission</a>";
 
 			}
-			$result .= "</ul>";
+			//$result .= "</ul>";
 			$result .= "<p>Nous avons trouvé <b>". $countreq ."</b> résultat(s).</p>";
 			return $result;
 
@@ -186,15 +186,15 @@ Abstract class Requete {
 
 			$result = "<h3>Editeur(s) trouvé(s)</h3>";
 			$countreq = 0;
-			$result .= "<ul>";
+			//$result .= "<ul>";
 			while ($row = $request->fetch(PDO::FETCH_ASSOC)){
 				$countreq++;
 				$consult = $row["Id_Ed"];
-				$result .= "<li>" . $row["Nom_Ed"] . " : " . $row["Description_Ed"] . "</li>";
+				$result .= "<p>" . $row["Nom_Ed"] . " : " . $row["Description_Ed"] . "</p>";
 				$result .= "<a href='index.php?p=info&editeur_id=$consult'>Plus d'informations sur l'éditeur</a>";
 
 			}
-			$result .= "</ul>";
+			//$result .= "</ul>";
 			$result .= "<p>Nous avons trouvé <b>". $countreq ."</b> résultat(s).</p>";
 			return $result;
 

@@ -1,0 +1,185 @@
+<!Doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UFT-8">
+		<title>Inscription</title>
+		<meta name="author" content="Docpod Project">
+		<meta name="keywords" content="Docpod, documentaires audio, podcast, podcasting, biblothèque audio">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	<head>
+	<body>
+
+			
+		<div id="cont-general">
+			<div id="clear"></div>
+
+			<section id="nav-primary">
+				<a href="Newuser.html"class="nav-btn">Inscription à DocPod</a>
+				<a href="Accueil2.html"class="nav-btn">Accueil</a>
+				<a href="Infocast.html" class="nav-btn">Infocast</a>
+				<a href="Dashboard.html"class="nav-btn">Espace personnel</a>
+				<a href="#apropos"class="nav-btn">à Propos</a>
+				<a href="Player.html"class="nav-btn">Lecteur</a>
+				<a href="Search.html"class="nav-btn">Recherches avancées</a>
+				<a href="#contacts"class="nav-btn">Partenaires</a>
+				<a href="#contacts"class="nav-btn">Contacts</a>
+			</section>
+			<header>
+				<div class="logo">
+					<img src="images/casqueoblique.png" alt="logodocpod">
+				</div>
+
+					
+
+					<div class="titre">
+						<h1>Plateforme des podcasts documentaires<h1>
+						<h2> - INSCRIPTION -</h2>
+					</div>
+					<div class="formulaire-recherche">
+					<form  action="" method="POST">				
+							<ul>
+							<li><input type="text" name="simple" placeholder=" Recherche simple"></li>
+							<li><input type="submit" name="send" value="OK"></li><?php echo $oldsearch ?>
+							</ul>
+					</form>
+				</div>
+			</header>
+
+			<!-- LOGIN -->
+				
+			<nav class="nav">
+					<ul class="nav__menu">
+						<li class="nav__menu-item">Login
+					 		<ul class="nav__submenu">
+					 			<?php echo $message;
+								If (!isset($_SESSION["username"]) || empty($_SESSION["username"])){
+								?>
+					 			<form action="" methode="POST">
+					 				<li class="nav__submenu-item"><input type="text" name="username" placeholder="Nom"></li>
+									<li class="nav__submenu-item"><input type="password" name="mdp" placeholder="Mot de passe"></li>
+								</form>
+									<li class="nav__submenu-item"><input type="submit" value="Se Connecter"></li>
+									<?php
+									} else {
+									?>	
+							</ul>
+						</li>
+					</ul>	
+				</nav>
+
+
+			<!-- CONTENU -->
+
+			<!-- barre de navigation revue de presse -->		
+
+				<div id="container">
+  <!-- Item 1 -->
+ 					 <div class="accordion">
+    					<label for="tm" class="accordionitem"><h2>Revue de presse <!-- <span class="arrow">&raquo;</span> --></h2></label>
+    					<input type="checkbox" id="tm"/>
+   							 <p class="hiddentext">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed  into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+ 				 </div>
+  
+  <!-- Item 2 -->
+  					<div class="accordion">
+   						 <label for="tn" class="accordionitem"><h2>Dernières publications<!--  <span class="arrow">&raquo;</span> --></h2></label>
+    						<input type="checkbox" id="tn"/>
+    							<p class="hiddentext">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+  					</div>
+  
+  <!-- Item 3 -->
+  					<div class="accordion">
+    					<label for="to" class="accordionitem"><h2>Dossiers <!-- <span class="arrow">&raquo;</span> --></h2></label>
+   						 <input type="checkbox" id="to"/>
+   							 <p class="hiddentext">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+  					</div>
+
+ 					<div class="accordion">
+    					<label for="tp" class="accordionitem"><h2>Suggetions alléatoires <!-- <span class="arrow">&raquo;</span> --></h2></label>
+    					<input type="checkbox" id="tp"/>
+    						<p class="hiddentext">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+  					</div>
+				</div>
+
+			<div id="clear"></div>
+<!-- Lecteur -->			
+			
+			
+<!-- corp de page -->
+
+			<section id="corp-de-page-in">
+				<div id="titre-re">
+					<article>
+						<h1>Inscription à DOCPOD</h1>
+						<br />
+							<p>L’inscription à DOCPOD n’est pas obligatoire, il est possible de consulter et d’écouter les émissions disponibles sur le site sans y être inscrit.<br/>
+							Néanmoins, s’inscrire à DOCPOD permet de gérer votre compte d’avoir accès à vos historiques d’écoute et de s’abonner au flux audio de vos émissions préférées.</p><br/>
+							
+							
+					</article>
+				</div>
+
+				<div id="container-insc">
+
+				<div class="accordion-insc">
+
+   						 <label for="insc" class="accordionitem"><h2>Inscription<!--  <span class="arrow">&raquo;</span> --></h2></label>
+
+    						<input type="checkbox" id="insc"/>
+
+    							<form class="hiddentext" action="" method="POST">
+
+										<ol class="insc-formu">
+											<p>Pour s'inscrire à DOCPOD remplisez les champs suivants et cliquez sur le bouton de confirmation.</p>
+											<li><input type="text" name="username" placeholder="Username" required autofocus>
+											</li>
+											<li><input type="text" name="email" placeholder="Adresse Email" required>
+											</li>
+											<li><input type="password" name="password_first" placeholder="Password" required autofocus>
+											</li>
+											<li><input type="password" name="password_second" placeholder="Password repeated" required>
+											</li>
+											
+											<li class=""><input type="submit" value="Register">
+											</li>
+										<ol>
+									</form>
+
+  					</div>
+  					<div class="ph-des">
+  					<p>Vous pouvez à tout moment vous <a href="Dashboard.html">désinscrire</a> et continuer à profiter des services proposés par DOCPOD.</p>
+  					</div>
+  				</div>
+
+
+				
+				 
+				
+				
+			</section>
+
+			<section id="apropos">
+				<article class="art-apropos">
+					<h3>à Propos</h3>
+				</article>
+			</section>
+
+			<section id="footer">
+				<article id="contacts">
+					<h3>CONTACTS :</h3>
+						<a href="mailto:docpodprojet@gmail.com">docpodprojet@gmail.com</a>
+						<a href="mailto:thomas.g.pauly@gmail.com">thomas.g.pauly@gmail.com</a>
+						<a href="mailto:savinienpeeters@hotmail.com">savinienpeeters@hotmail.com</a>
+				</article>
+				
+				<article id="contacts">
+					<h3>PARTENAIRES :</h3>
+						<a href="https://bibliothequedesaintjosse.wordpress.com/">Bibliothèque communale de Saint-Josse-ten-Noode</a>
+						<a href="http://biblioxl.be/">Bibliothèque communale francophone d'Ixelles</a>
+						<a href="http://www.mabiblio.be/">Les bibliothèques de Schaerbeek-Evere</a>
+						<a href="https://www.pointculture.be/bruxelles/">Point Culture</a>
+				</article>
+			</section>
+			
+		
+	</body>

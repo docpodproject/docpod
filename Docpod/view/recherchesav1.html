@@ -1,0 +1,223 @@
+
+<!Doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UFT-8">
+		<title>Recherches avancées</title>
+		<meta name="author" content="Docpod Project">
+		<meta name="keywords" content="Docpod, documentaires audio, podcast, podcasting, biblothèque audio">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	<head>
+
+	<body>
+		
+		<?php require_once "menubar.html"; ?>
+<!-- 
+
+
+			<div id="clear"></div>
+				<div id="container-rech-av">
+  <!-- Item 1 --><section>
+ 					 <div class="accordion-rech-av">
+    					
+    					<label for="rech-av" class="accordionitem"><h2>Recherche avancée   <!-- <span class="arrow">&raquo;</span> --></h2></label>
+
+    						<input type="checkbox" id="rech-av"/>
+   							 
+   							 	<form class="hiddentext" action="" method="POST">
+   							 		 <p>La recherche avancée permet une interrogation plus fine dans la base de donées de DOCPOD.
+									<br />
+									Tous les critères de recherches présents sur cette page peuvent être utilisés de manière indépendante ou croisée.</p><br/>
+   							 		 <p>Effectuer un recherche par :</p>
+
+								<ol class="rech-av-formu">
+									<li><input type="text" name="titre" placeholder="Titre d'émission" value=""></li> <?php echo $oldtitle ?>
+
+									<li><input type="text" name="editeur" placeholder="Editeur" value=""></li> <?php echo $oldediteur ?>
+
+									<li><input type="text" name="intervenant" placeholder="Intervenant" value=""></li> <?php echo $oldintervenant ?>
+
+									<li><input type="text" name="keyword" placeholder="Mots-clés" value=""></li> <?php echo $oldkeyword ?>
+
+									<li><input type="text" name="categorie" placeholder="Catégorie" value=""></li> <?php echo $oldcategorie ?>
+
+									<li><input type="text" name="type" placeholder="Type de podcast" value=""></li><?php echo $oldtype ?>	
+
+									<li class="btn-s"><input type="submit" name="avance" placeholder="Chercher"></li>
+								<ol>
+							</form>
+									<p>Résultas de votre recherche :</p>
+									<p><?php echo $resultat_auteur ?></p>
+									<p><?php echo $resultat_kw ?></p>
+									<p><?php echo $resultat_categorie ?></p>
+									<p><?php echo $resultat_type ?></p>
+									<p><?php echo $resultat_simple_editeur ?></p>
+								<p><?php echo $resultat_simple_emission ?></p>
+								<p><?php echo $resultat_simple_episode ?></p>
+ 				 </div>
+ 				 <div class="accordion-rech-av">
+   						 <label for="dossiers" class="accordionitem">
+   						 	<h2>
+   						 		Dossiers thématiques<!--  <span class="arrow">&raquo;</span> -->
+   						 	</h2>
+   						 </label>
+    						<input type="checkbox" id="dossiers"/>
+    							<ul class="hiddentext">
+    								<li>Les femmes au Moyen-Age</li>
+    								<li>Les villes au XXI S.</li>
+    							</ul>
+  					</div>
+
+  					<div class="accordion-rech-av">
+   						 <label for="repet" class="accordionitem"><h2>Repertoire des émissions<!--  <span class="arrow">&raquo;</span> --></h2></label>
+    						<input type="checkbox" id="repet"/>
+
+    							<ul class="hiddentext">
+    								<li class="alpha">
+    									<a href="#a"> A </a> |
+    									<a href="#b"> B </a> |
+    									<a href="#c"> C </a> |
+    									<a href="#d"> D </a> |
+    									<a href="#e"> E </a> |
+    									<a href="#f"> F </a> |
+    									<a href="#g"> G </a> |
+    									<a href="#h"> H </a> |
+    									<a href="#j"> J </a> |
+    									<a href="#k"> K </a> |
+    									<a href="#l"> L </a> |
+    									<a href="#m"> M </a> |
+    									<a href="#n"> N </a> |
+    									<a href="#o"> O </a> |
+    									<a href="#p"> P </a> |
+    									<a href="#q"> Q </a> |
+    									<a href="#r"> R </a> |
+    									<a href="#s"> S </a> |
+    									<a href="#t"> T </a> |
+    									<a href="#u"> U </a> |
+    									<a href="#v"> V </a> |
+    									<a href="#w"> W </a> |
+    									<a href="#x"> X </a> |
+    									<a href="#y"> Y </a> |
+    									<a href="#z"> Z </a> |
+    									<a href="#0-9"> 0-9 </a>
+    									</li>
+    								<ol id="a">A
+    									<li>A' live - France inter</li>
+    									<li>L'actu dans le rétro - France inter</li>
+    								</ol>
+    								<ol id="b">B
+    									<li>Back To Back - Mélanie Bauer - France Inter</li>
+    								</ol>
+    								<ol id="c">C
+    									<li></li>
+    								</ol>
+    								<ol id="d">D
+    								    <li></li>
+    								</ol>
+    								<ol id="e">E
+    									<li></li>
+    								</ol>
+    								<ol id="f">F
+    									<li></li>
+    								</ol>
+    								<ol id="g">G
+    									<li></li>
+    								</ol>
+    								<ol id="h">H
+    									<li></li>
+    								</ol>
+    								<ol id="i">I
+    									<li></li>
+    								</ol>
+    								<ol id="j">J
+    									<li></li>
+    								</ol>
+    								<ol id="k">K
+    									<li></li>
+    								</ol>
+    								<ol id="l">L
+    									<li></li>
+    								</ol>
+    								<ol id="m">M
+    									<li></li>
+    								</ol>
+    								<ol id="n">N
+    									<li></li>
+    								</ol>
+    								<ol id="o">O
+    									<li></li>
+    								</ol>
+    								<ol id="p">P
+    									<li></li>
+    								</ol>
+    								<ol id="q">Q
+    									<li></li>
+    								</ol>
+    								<ol id="r">R
+    									<li></li>
+    								</ol>
+    								<ol id="s">S
+    									<li></li>
+    								</ol>
+    								<ol id="t">T
+    									<li></li>
+    								</ol>
+    								<ol id="u">U
+    									<li></li>
+    								</ol>
+    								<ol id="v">V
+    									<li></li>
+    								</ol>
+    									<li>Le vide grenier pataphysique</li>
+    								</ol>
+    								<ol id="w">W
+    									<li>Welcome, nouveau monde</li>
+    								</ol>
+    								<ol id="x">X
+    									<li></li>
+    								</ol>
+    								<ol id="y">Y
+    									<li></li>
+    								</ol>
+    								<ol id="z">Z
+    									<li></li>
+    								</ol>
+    								<ol id="0-9">0-9
+    									<li></li>
+    								</ol>
+    								
+    							</ul>
+  					</div>
+
+ 				
+
+				
+			</section>
+
+				<!-- <p><?php //echo $resultat_simple_editeur ?></p>
+				<p><?php //echo $resultat_simple_emission ?></p>
+				<!-- <p><?php //echo $resultat_simple_episode ?></p> -->
+
+	<h2>Recherche avancée</h2>
+
+		<form action="" method="POST">
+			<p><input type="text" name="titre" placeholder="Titre" value= <?php echo $oldtitle ?>></p>
+			<p><input type="text" name="editeur" placeholder="Editeur" value= <?php echo $oldediteur ?>></p>
+			<p><input type="text" name="intervenant" placeholder="Intervenant" value= <?php echo $oldintervenant ?>></p>
+			<p><input type="text" name="keyword" placeholder="Mots-clés" value= <?php echo $oldkeyword ?>></p>
+			<p><input type="text" name="categorie" placeholder="Catégorie" value=<?php echo $oldcategorie ?>></p>
+			<p><input type="text" name="type" placeholder="Type de podcast" value=<?php echo $oldtype ?>></p>			
+			<p><input type="submit" name="avance" placeholder="Chercher"></p>
+		</form>
+			
+		<p><?php echo $resultat_auteur ?></p>
+		<p><?php echo $resultat_kw ?></p>
+		<p><?php echo $resultat_categorie ?></p>
+		<p><?php echo $resultat_type ?></p>
+
+<?php echo $nb_entrees_db;
+echo $message;
+include_once "footer.php" ?>
+</body>
+</html>
+

@@ -1,9 +1,6 @@
-<?php
-include_once "controller/login.php";
-?>
 
-<!DOCTYPE html>
-<html>
+<?php require_once "menubar.html" ?>
+
 <head>
 	<title>DocPod - About</title>
 </head>
@@ -14,5 +11,3 @@ include_once "controller/login.php";
 
 
 <?php include_once "footer.php" ?>
-</body>
-</html>
