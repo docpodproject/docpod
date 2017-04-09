@@ -41,6 +41,8 @@ IF (isset($_GET["type"])){
 				break;
 	}
 
+	require_once "view/repository.php";
+
 } else {
 
 	$message = "Que souhaitez-vous consulter ?";

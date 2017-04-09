@@ -1,14 +1,14 @@
 <?php
 
 require_once "model/class.php";
-require_once "controller/login.php";
+//require_once "controller/login.php";
 
 if (!empty($_GET)){
 	if (isset ($_GET["p"])){
 		$page = ($_GET["p"]);
 		switch($page){
 			case "homepage":
-				include "homepage.php";
+				include "homepage.html";
 				break;
 
 			case "dashboard":
@@ -43,16 +43,19 @@ if (!empty($_GET)){
 				include "controller/admin.php";
 				break;
 
+			case "newuser" :
+				include "controller/newuser.php";
+				break;
 
 			default : 
-				include "homepage.php";
+				include "homepage.html";
 				break;
 
 			}
 	}
 }  else {
-		include "homepage.php";
+		include "homepage.html";
 	}
 
-require_once "footer.php";
+
 ?>

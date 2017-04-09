@@ -35,7 +35,7 @@ If (!empty($_POST)){
 		$resultat_simple_editeur = Requete::recherche_Fulltext_Editeur($terme_simple);
 		$resultat_simple_emission = Requete::recherche_Fulltext_Emission($terme_simple);
 		$resultat_simple_episode = Requete::recherche_Fulltext_Episode($terme_simple);
-		require_once "view/search.php";		
+		require_once "view/recherchesav1.html";		
 		
 	}
 
@@ -69,12 +69,12 @@ If (!empty($_POST)){
 			$resultat_type = Requete::recherche_Types($terme_avance);
 		}
 
-		require_once "view/search.php";
+		require_once "view/recherchesav1.html";
 
 	} else{
 	$message = "Effectuer une recherche sur cette page.";
 	}
-} else include "view/search.php";
+} else include "view/recherchesav1.html";
 
 
 ?>

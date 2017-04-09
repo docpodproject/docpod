@@ -33,8 +33,19 @@ Class Episode {
 
 	}
 
+	public function getEpisodeTitre(){
+		return $this->Titre_Epi;
+	}
 	
+	public function getEpisodeUrl(){
+		return $this->Url_Epi;
+	}
 
+	public function getEpisodeDescription(){
+		return $this->Description_Epi;
+	}
+
+	
 	public function episode_By_Id($id){
 		$pdo = connect_db::connexion();
 		$stmt = "SELECT * FROM episodes WHERE Id_Epi = :Id_Epi";

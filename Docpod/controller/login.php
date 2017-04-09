@@ -1,14 +1,13 @@
 <?php
-session_start();
 
 require_once "model/class.php";
 
 $olduser = "";
-$message = "";
+$messageLogin = "";
 
 
 If ((!isset($_SESSION['username'])) || (empty($_SESSION['username']))){
-
+	session_start();
 
 	If(isset($_POST["username"]) && isset($_POST["mdp"])) {
 
@@ -25,12 +24,12 @@ If ((!isset($_SESSION['username'])) || (empty($_SESSION['username']))){
 		header("Refresh:0");
 
 	} else {
-				$message = "Nouvel utilisateur ? <a href='newuser.php'>Enregistrez-vous !</a>";
+				$messageLogin = "<li class='pas_inscrit'><a href='index.php?p=newuser'>Pas encore inscrit ?</a><li>";
 	}
 	
 } elseif (isset($_SESSION)) {
 
-	$message = "Vous êtes connecté avec cet identifiant :  <b>" . ucfirst($_SESSION["username"]) . "</b>";
+	$messageLogin = "<li class='pas_inscrit'>Vous êtes connecté avec cet identifiant :  <b>" . ucfirst($_SESSION["username"]) . "</li>";
 
 }
 
@@ -38,6 +37,7 @@ If(isset($_POST["deconnexion"])){
 	session_unset();
 	session_destroy();
 	header("Refresh:0");
+	header("homepage");
 }
 
 require_once "view/login.php";

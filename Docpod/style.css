@@ -1,0 +1,1753 @@
+/*Feuille pour la page titre*/
+@font-face
+{
+	font-family: 'Times Sans Serif';
+	src: url('Times Sans Serif.ttf')
+	font-weight: normal;
+	font-style: normal;
+}
+#site-container 
+{
+	margin: 0 auto;
+	max-width: 1000px;
+	max-height: 200%;
+	padding: 0;
+}
+html
+{
+  /*-font-smoothing: antialiased;*/
+  	height: 100%;
+	background: white;
+	background: radial-gradient(circle, #fff 30%, #ccc);
+	background-size: cover;
+}
+
+
+*, 
+*:before, 
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+	adding: 0;}
+*
+{
+	font-family: 'Times Sans Serif', helvetica, arial, Serif, sans-serif;
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+li, li a, a:visited
+{
+	list-style-type: none;
+	text-decoration: none;
+	color: #555555;
+}
+hr
+{
+	/*border: 1px solid #fe3600;*/
+	border: 0.5px solid #0037FF;
+}
+/*-----------input---------------------*/
+{
+	background-color:rgb(67, 137, 137);
+	border:0px;
+	color: black; 
+}
+
+body 
+{
+	/*background-color: lavender;*/
+	/*color: ;*/
+	/*background: linear-gradient(0deg, rgba(254,54,0,1) 0%, rgba(128,128,128,0.55) 100%);*/
+	/*background: linear-gradient(0deg, rgba(254,54,0,1) 0%, rgba(128,128,128,1) 100%);*/
+	/*background: linear-gradient(0deg, rgba(254,54,0,1) 0%, rgba(255,255,255,0) 100%);*/
+	/*background: linear-gradient(0deg, rgba(254,54,0,1) 0%, rgba(254,132,99,0) 39%, rgba(255,255,255,0) 100%)*/
+	/*background: linear-gradient(0deg, rgba(254,54,0,1) 0%, rgba(254,54,0,1) 94%, rgba(255,255,255,1) 100%);*/
+}
+
+nav a:hover, div a:hover
+{
+	color: white;
+}
+
+li, li a, a:visited, a
+{
+	list-style-type: none;
+	text-decoration: none;
+	color: black;
+}
+
+p, li, 
+{
+	font-family: helvetica;
+}
+
+/*---------------------------------------------*/
+#clear 
+{
+	width: 100%;
+	background-color: #FE3600;
+	height: 10px;
+}
+/*----------------Menu de navigation----------*/
+
+#nav-primary
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0%;
+	line-height: 20px;
+   	font-weight: 700;
+    text-transform: uppercase;
+    list-style-type: none;
+    background-color: #ed3300;
+    font-size: 0.8em;
+    /*border:1px solid green;*/
+}
+
+.nav-btn
+{
+  padding: 5px 26.5px;
+  text-decoration:none;
+  border-bottom: 1px solid white;
+  /*text-transform:uppercase;*/
+  background-color: #ed3300;
+  /*border: 1px solid green;*/
+}
+.nav-btn:hover
+{
+  border:none;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+  background-color: #FE3600;
+  /*background: rgba(0, 0, 0, 0.2);*/
+  padding:0px;
+  color:white;
+  letter-spacing:5px;
+}
+
+/*------------HEADER-----------------*/
+header
+{
+	display: flex;
+	justify-content: space-between;
+	background-color: #FE3600;
+	margin: 0%;
+	/*border: 1px solid black;*/
+}
+.logo
+{
+	padding: 1.2% 0% 0% 3%;	
+}
+.titre h1
+{
+	text-align: center;
+	padding: 7% 0 0 0;
+	margin: 0 0 0 -9%;
+	width: 100%;
+	font-weight: 700;
+
+	/*border:1px solid green;*/
+}
+
+.titre h2
+{
+	text-align: center;
+	padding: 0 0 0 0;
+	margin:0 0 0 -12%;
+	text-transform: uppercase;
+	/*border:1px solid green;*/
+}
+.formulaire-recherche
+{
+	padding: 5% 4% 0 0;
+	margin: 0;
+	/*border:1px solid green;*/
+}
+.formulaire-recherche li
+{
+	display: inline;
+	/*border:1px solid green;*/
+}
+.formulaire-recherche input
+{
+    background-color: #ed3300;
+    color: black;
+    border-left: 0 none;
+    border-top: 0 none;
+    border-right: 0 none;
+    border-bottom-color: white;
+    font-size: 0.9em;
+    /*border:1px solid green;*/
+}
+/*-------------WEBKIT SUR input RECHERCHE SIMPLE---------*/
+input::-webkit-input-placeholder
+{
+	color: black;
+	line-height: 20px;
+   	font-weight: 600;
+   	text-transform: uppercase;
+   	/*text-align: center;*/
+   	/*border:1px solid green;*/
+}
+/*------------Fin----------------------*/
+
+
+/*------------Login---------------------*/
+
+.nav
+{
+  	width: 100%;
+  	background-color: #FE3600;
+  	color: black;
+  	
+  	/*border:1px solid green;*/
+}
+.nav__menu 
+{
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 0 0.5% 3.5%;
+    margin: 0 0 0 0;
+    background-color: #fe3600;
+
+    /*border:1px solid green;*/
+}
+.nav__menu-item 
+{
+    display: inline-block;
+    position: relative;
+    font-family: 'Times Sans Serif';
+    color: black;
+
+    /*border:1px solid green;*/
+ }  
+
+.nav__menu-item:hover
+ {
+    background-color: #FE3600;
+    background: rgba(0, 0, 0, 0.1);
+    letter-spacing:5px;
+    color:white;
+    
+ }  
+
+.nav__menu-item:hover .nav__submenu
+ {
+    display: block;
+    
+ }
+
+ .nav__menu-item input
+ {
+ 	background-color: #FE3600;
+ 	border-color: #ed3300;
+    color:white;
+    position: relative;
+    left: 4px;
+    /*border:1px solid green;*/
+ }   
+ .nav__submenu 
+ {
+    font-weight: 300;
+    text-transform: none;
+    display: none;
+    position: absolute;
+    width: 182px;
+  	background-color: #FE3600;
+  	;
+  	/*border:1px solid green;*/
+}
+.nav__submenu-item:hover 
+{
+    background: rgba(0, 0, 0, 0.1);
+}
+.pas_inscrit
+{
+	text-align: center;
+	line-height: 20px;
+	font-family: helvetica;
+	letter-spacing: 0px;
+	padding-bottom: 5%;
+	color:orange;
+}
+
+/*---barre de navigation revue de presse--------*/
+
+
+p{
+}
+
+
+#container
+{
+	
+	display: flex;
+	flex-wrap: no-wrap;
+	align-items: stretch;
+	justify-content: center;
+  	height: auto;
+  	margin: 0 auto;
+  	background-color: #ed3300;
+  	/*opacity: 0.5;*/
+  	
+}
+.accordion
+{
+	width: 20%;
+	line-height: 20px;
+   	font-weight: 700;
+    text-transform: uppercase;
+    list-style-type: none;
+    background-color: #ed3300;
+    font-size: 0.8em;
+}
+
+.accordion label
+{
+  	display:block;
+  	background-color: #ed3300;
+  	line-height: 20px;
+   	font-weight: 700;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 0.8em;
+  	color: black;
+   	padding: 5px;
+  	/*border-bottom: 1px solid white;*/
+  	
+  	cursor: pointer;
+}
+.accordion h2
+{
+	padding: 0 0 0 13%;
+	line-height: 20px;
+   	font-weight: 700;
+}
+
+.accordion p
+{
+  color: #424242;
+  padding: 10px;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  border-top: 1px solid #ed3300;
+  border-left: 2.5px solid #ed3300;
+  border-right: 2.5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  display: none;
+  text-align: left;
+  background-color: #fff;
+ 
+}
+
+#tm:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#tm
+{
+  display: none;
+  position: relative;
+  /*max-width: 20%;*/
+}
+
+#tn:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#tn{
+  display: none;
+  position: relative;
+}
+
+#to:checked ~ .hiddentext{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#to{
+  display: none;
+  position: relative;
+}
+#tp:checked ~ .hiddentext{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#tp{
+  display: none;
+  position: relative;
+}
+.arrow
+{
+  color: black;
+}
+
+/*--------LECTEUR-------------------*/
+#lecteur
+{
+	float :right;
+	width: 20%;
+	/*height:100px;*/
+	/*background-color: grey;*/
+	/*border: 1px solid green;*/
+	/*text-align: center;*/
+	/*margin: %;*/
+	border: 5px solid #fe3600; 
+	/*border: 1px solid red;*/
+}
+
+#lecteur audio
+{
+	width: 100%;
+	/*height:50px;*/
+	border-color: ;
+}
+
+	
+/*--------------CORP DE PAGE------------*/
+
+#corp-de-page
+{
+	
+	height: 100%;
+	margin: 0% 0% 0% 20%;
+	padding: 0% 0% 0% 0%;
+	width: 60%;
+	/*border: 1px solid violet;*/
+}
+#corp-de-page h1
+{
+	
+	font-size: 185%;
+	color: #191919;
+}
+#corp-de-page article
+{
+	
+	 margin: 0% 0% 0% 0%;
+	 padding: 10% 0% 10% 0%;
+	 width: 100%;
+	 height: auto;
+	font-size: 120%;
+	line-height: 29px;
+	letter-spacing: 0px;
+	 color: #424242;
+	 /*border: 1px solid blue; */
+}
+#corp-de-page a 
+{
+	color: #fe3600;
+	font-family: helvetica;
+}
+
+/*-----------A PROPOS-----------------*/
+#apropos
+{
+	margin: 0% 0% 0% 0%;
+	padding: 2% 0% 0% 20%;
+	width: 100%;
+	background-color: grey;
+	text-transform: uppercase;
+	height: 100px;
+	/*border: 1px solid green;*/
+}
+.art-apropos
+{
+	margin: 0% 0% 0% 0%;
+	 padding: 0% 0% 0% 0%;
+	 width: 100%;
+	 height: px;
+	 /*border: 1px solid blue;*/
+}
+
+/*-------------FOOTER-----------------*/
+
+#footer
+{
+	display:flex;
+     /*justify-content: space-around;*/
+     flex-direction:row; 
+    width: 100%;
+    background-color: #ed3300;
+    padding: 5% 0 10% 0%;
+    margin: 0 0 0 0;
+    /*border: 1px solid blue;		*/
+}
+#contacts
+{
+	margin: 0 0 0 20%;
+	padding: 0% 0 0 0%;
+	width: auto;
+	/*text-align: center;*/
+	font-size: 90%;
+	line-height: 25px;
+	/*border: 1px solid blue;*/
+}
+#contacts h3
+{
+	/*padding: 2% 0% 0% 20%;*/
+	margin: 0 0 0 0%;
+}
+
+#footer a 
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+	font-family: helvetica;
+}
+#footer a:hover
+{
+	color:black;
+}
+/*----------------------------Fin de page accueil---------------------------------------------*/
+
+
+
+/*-----------------------------PAGE RECHERCHES AVANCéES---------------------------*/
+
+p{
+}
+
+
+#container-rech-av
+{
+	
+	display: flex;
+	flex-direction:column;
+	flex-wrap: no-wrap;
+	justify-content: space-around;
+	/*align-items: stretch;*/
+	/*justify-content: center;*/
+  	height: auto;
+  	margin: 0 auto;
+  	/*background-color: #ed3300;*/
+  	/*opacity: 0.5;*/
+  	/*border: 1px solid black;*/
+  	
+}
+.accordion-rech-av
+{
+	width: 100%;
+	margin: 0% 0 0.5% 0;
+	/*height: 50px;*/
+	line-height: 20px;
+   	font-weight: 700;
+    text-transform: uppercase;
+    list-style-type: none;
+    /*background-color: #ed3300;*/
+    font-size: 1em;
+    /*border: 1px solid green;*/
+}
+
+.accordion-rech-av label
+{
+  	display:block;
+  	background-color: #ed3300;
+  	line-height: 20px;
+   	font-weight: 800;
+    /*text-transform: uppercase;*/
+    list-style-type: none;
+    font-size: 0.8em;
+  	color: black;
+   	padding: 5px;
+  	cursor: pointer;
+  	/*border: 1px solid white;*/
+}
+.accordion-rech-av h2
+{
+	padding: 0 0 0 2%;
+	line-height: 75px;
+   	font-weight: 700;
+   	font-family: helvetica;
+   	/*border: 1px solid red;*/
+}
+
+.accordion-rech-av ul 
+/* remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  text-transform: none;
+  font-size: 1em;
+  display: none;
+  text-align: left;
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+#rech-av:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#rech-av
+{
+  display: none;
+  position: relative;
+  
+}
+.accordion-rech-av form 
+ /*remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  display: none;
+  text-align: left;
+  text-transform: lowercase;
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+.accordion-rech-av p
+{
+	text-transform: none;
+	font-size: 1.1em;
+	padding: 1%;
+	font-family: helvetica;
+	
+}
+.accordion-rech-av li 
+{
+	font-family: helvetica;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/*width: 100%;*/
+	padding: 0.5%;
+}
+.rech-av-formu li
+{
+	padding: 0% 0 0 30%;
+	width: 90%;
+	margin: %;
+	text-transform: none;
+}
+.rech-av-formu input
+{
+	width: 50%;
+	height: 25px;
+	padding: 0% 0 0 2%;
+	margin: 1%;
+	border: 2px solid #fe3600;
+}
+.accordion-rech-av ul 
+/* remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  text-transform: none;
+  font-size: 1em;
+  display: none;
+  text-align: left;
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+#dossiers:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  font-family: helvetica;
+  /*border: 1px solid blue;*/
+}
+
+input#dossiers
+{
+  display: none;
+  position: relative;
+
+  /*max-width: 20%;*/
+}
+
+/*.accordion-rech-av p */
+/* remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  text-transform: none;
+  font-size: 1em;
+  display: none;
+  text-align: left;
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+#repet:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  font-family: helvetica;
+  /*border: 1px solid blue;*/
+}
+
+input#repet
+{
+  display: none;
+  position: relative;
+
+  /*max-width: 20%;*/
+}
+li.alpha
+{
+	display: inline;
+}
+
+/*---------------------------------------------------*/
+/*______________________________________________________*/
+/*Titre de toutes les pages*/
+#recherches
+{
+	
+	height: 100%;
+	margin: 0% 0% 0% 20%;
+	padding: 6% 0% 20% 0%;
+	width: 60%;
+	/*border: 1px solid violet;*/
+}
+#titre-re h1
+{
+
+	font-size: 185%;
+	color: #191919;
+}
+#recherches-av h1, .resultats-rech-av h1
+{
+	font-size: 160%;
+	color: #191919;
+	padding: 5% 0 2% 2%;
+	margin:0 0 0 0;
+}
+#recherches article
+{
+	 margin: 0% 0% 0% 0%;
+	 padding: 0% 0% 0% 0%;
+	 width: 100%;
+	 height: auto;
+	font-size: 120%;
+	line-height: 29px;
+	letter-spacing: 0px;
+	 color: #424242;
+	 /*border: 1px solid blue; */
+}
+/* Fin titre de toutes les pages*/
+/*___________________________________________*/
+
+
+/*-----------------------PAGE PERSONELLE----------------------*/
+
+p{
+}
+
+
+#container-dash
+{
+	
+	display: flex;
+	flex-direction:column;
+	flex-wrap: no-wrap;
+	justify-content: space-around;
+	/*align-items: stretch;*/
+	/*justify-content: center;*/
+  	height: auto;
+  	margin: 0 auto;
+  	/*background-color: #ed3300;*/
+  	/*opacity: 0.5;*/
+  	/*border: 1px solid black;*/
+  	
+}
+.accordion-dash
+{
+	width: 100%;
+	margin: 0% 0 0.5% 0;
+	/*height: 50px;*/
+	line-height: 20px;
+   	font-weight: 700;
+    text-transform: uppercase;
+    list-style-type: none;
+    background-color: #ed3300;
+    font-size: 1em;
+    /*border: 1px solid green;*/
+}
+
+.accordion-dash label
+{
+  	display:block;
+  	background-color: #ed3300;
+  	line-height: 20px;
+   	font-weight: 800;
+    /*text-transform: uppercase;*/
+    list-style-type: none;
+    font-size: 0.8em;
+  	color: black;
+   	padding: 5px;
+  	cursor: pointer;
+  	/*border: 1px solid white;*/
+}
+.accordion-dash h2
+{
+	padding: 0 0 0 2%;
+	line-height: 75px;
+   	font-weight: 700;
+   	font-family: helvetica;
+   	/*border: 1px solid red;*/
+}
+
+.accordion-dash ul 
+/* remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  text-transform: none;
+  font-size: 1em;
+  display: none;
+  text-align: left;
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+
+#va:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  font-family: helvetica;
+  /*border: 1px solid blue;*/
+}
+
+input#va
+{
+  display: none;
+  position: relative;
+
+  /*max-width: 20%;*/
+}
+
+#tec:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#tec
+{
+  display: none;
+  position: relative;
+  /*max-width: 20%;*/
+}
+
+
+#he:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#he
+{
+  display: none;
+  position: relative;
+  /*max-width: 20%;*/
+}
+
+#ae:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#ae
+{
+  display: none;
+  position: relative;
+  /*max-width: 20%;*/
+}
+
+#des:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#des
+{
+  display: none;
+  position: relative;
+  /*max-width: 20%;*/
+}
+.accordion-dash form 
+/* remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  display: none;
+  text-align: left;
+  /*text-transform: lowercase;*/
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+.accordion-dash p
+{
+	text-transform: none;
+	font-size: 1.1em;
+	padding: 1%;
+	font-family: helvetica;
+	
+}
+.accordion-dash li 
+{
+	font-family: helvetica;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 55%;
+	padding: 0.5%;
+}
+.des-formu li
+{
+	padding: 0% 0 0 30%;
+	width: 90%;
+	margin: 2%;
+	text-transform: none;
+}
+.des-formu input
+{
+	width: 50%;
+	height: 25px;
+	padding: 0% 0 0 2%;
+	margin: 1%;
+	border: 2px solid #fe3600;
+}
+/*--------------______________________-------------------*/
+
+
+
+/*---------------NEW USER----------------*/
+
+#corp-de-page-in
+{
+	
+	height: 100%;
+	margin: 0% 0% 0% 20%;
+	padding: 0% 0% 0% 0%;
+	width: 60%;
+	/*border: 1px solid violet;*/
+}
+#corp-de-page-in h1
+{
+	
+	font-size: 185%;
+	color: #191919;
+}
+#corp-de-page-in article
+{
+	
+	 margin: 0% 0% 0% 0%;
+	 padding: 10% 0% 0% 0%;
+	 width: 100%;
+	 height: auto;
+	font-size: 120%;
+	line-height: 29px;
+	letter-spacing: 0px;
+	 color: #424242;
+	 /*border: 1px solid blue; */
+}
+
+
+
+#container-insc
+{
+	
+	display: flex;
+	flex-direction:column;
+	flex-wrap: no-wrap;
+	justify-content: space-around;
+	/*align-items: stretch;*/
+	/*justify-content: center;*/
+  	height: auto;
+  	margin: 0 auto;
+  	/*background-color: #ed3300;*/
+  	/*opacity: 0.5;*/
+  	/*border: 1px solid black;*/
+  	
+}
+.accordion-insc
+{
+	width: 100%;
+	margin: 0% 0 0% 0;
+	/*height: 50px;*/
+	line-height: 20px;
+   	font-weight: 700;
+    text-transform: uppercase;
+    list-style-type: none;
+    background-color: #ed3300;
+    font-size: 1em;
+    /*border: 1px solid green;*/
+}
+
+.accordion-insc label
+{
+  	display:block;
+  	background-color: #ed3300;
+  	line-height: 20px;
+   	font-weight: 800;
+    /*text-transform: uppercase;*/
+    list-style-type: none;
+    font-size: 0.8em;
+  	color: black;
+   	padding: 5px;
+  	cursor: pointer;
+  	/*border: 1px solid white;*/
+}
+.accordion-insc h2
+{
+	padding: 0 0 0 2%;
+	line-height: 75px;
+   	font-weight: 700;
+   	font-family: helvetica;
+   	/*border: 1px solid red;*/
+}
+
+.accordion-insc ul 
+/* remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  text-transform: none;
+  font-size: 1em;
+  display: none;
+  text-align: left;
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+
+#insc:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#insc
+{
+  display: none;
+  position: relative;
+  /*max-width: 20%;*/
+}
+.accordion-insc form 
+/* remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  display: none;
+  text-align: left;
+  /*text-transform: lowercase;*/
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+.accordion-insc p
+{
+	text-transform: none;
+	font-size: 1.1em;
+	padding: 1%;
+	font-family: helvetica;
+	
+}
+.accordion-insc li 
+{
+	font-family: helvetica;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 55%;
+	padding: 0.5%;
+}
+.insc-formu li
+{
+	padding: 0% 0 0 30%;
+	width: 90%;
+	margin: 2%;
+	text-transform: none;
+}
+.insc-formu input
+{
+	width: 50%;
+	height: 25px;
+	padding: 0% 0 0 2%;
+	margin: 0%;
+	border: 2px solid #fe3600;
+}
+.ph-des
+{
+	margin: 0 0 35% 0;
+	padding: 1% 0 0 2%;
+}
+
+
+#inscription h1
+{
+	font-size: 160%;
+	color: #191919;
+	padding: 5% 0 2% 2%;
+	margin:0 0 0 0;
+	/*border: 1px solid red;*/
+}
+#inscription
+{
+	margin: 0% 0% 0% 0%;
+	 padding: 0% 0% 20% 0%;
+	 width: 100%;
+	 height: auto;
+	font-size: 120%;
+	line-height: 29px;
+	letter-spacing: 0px;
+	 color: #424242;
+}
+
+#inscription ul
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: px;
+	padding: 5% 0 0 40%;
+	font-size: 100%;
+	line-height: 29px;
+	letter-spacing: 0px;
+	color: #424242;
+}
+#inscription li
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2% 0 0 0%;
+}
+#inscription input
+{
+	width: 50%;
+	height: 25px;
+	padding: 0% 0 0 2%;
+	border: 2px solid #fe3600;
+}
+#corp-de-page-in a 
+{
+	color: #fe3600;
+	font-family: helvetica;
+}
+
+/*---------PAGE LECTEUR-----------------*/
+/*---------PAGE INFOCAST---------------*/
+/*---------PAGE ADMIN------------------*/
+/*premier bloc =>description du contenu*/
+#container-desc-cont
+{
+  
+  display: flex;
+  flex-direction:column;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  /*align-items: stretch;*/
+  /*justify-content: center;*/
+    height: auto;
+    margin: 0 auto;
+    /*background-color: #ed3300;*/
+    /*opacity: 0.5;*/
+    /*border: 1px solid black;*/
+    
+}
+.accordion-desc-cont
+{
+  width: 100%;
+  margin: 0% 0 0.5% 0;
+  /*height: 50px;*/
+  line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    list-style-type: none;
+    background-color: #ed3300;
+    font-size: 1em;
+    /*border: 1px solid green;*/
+}
+
+.accordion-desc-cont label
+{
+    display:block;
+    background-color: #ed3300;
+    line-height: 20px;
+    font-weight: 800;
+    /*text-transform: uppercase;*/
+    list-style-type: none;
+    font-size: 0.8em;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    /*border: 1px solid white;*/
+}
+.accordion-desc-cont h2
+{
+  padding: 0 0 0 2%;
+  line-height: 75px;
+    font-weight: 700;
+    font-family: helvetica;
+    /*border: 1px solid red;*/
+}
+
+.accordion-desc-cont ul 
+/* remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  text-transform: none;
+  font-size: 1em;
+  display: none;
+  text-align: left;
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+
+#desc-cont:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  font-family: helvetica;
+  /*border: 1px solid blue;*/
+}
+
+input#desc-cont
+{
+  display: none;
+  position: relative;
+
+  /*max-width: 20%;*/
+}
+.accordion-desc-cont form 
+ /*remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  display: none;
+  text-align: left;
+  text-transform: lowercase;
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+.accordion-desc-cont p
+{
+  text-transform: none;
+  font-size: 1.1em;
+  padding: 1%;
+  font-family: helvetica;
+  
+}
+.accordion-desc-cont li 
+{
+  font-family: helvetica;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*width: 100%;*/
+  padding: 0.5%;
+}
+.accordion-desc-cont h3
+{
+  text-transform: uppercase;
+}
+.accordion-desc-cont a
+{
+  color: #fe3600;
+  font-family: helvetica;
+  /*font-size: 1.2em;*/
+}
+.accordion-desc-cont a:hover
+{
+  color: black;
+}
+.formu-desc textarea 
+{
+  width: 95%;
+  height: 200px;
+  padding: 1% 2% 1% 2%;
+  margin: 0% 0% 5% 0;
+  border: 2px solid #fe3600;
+  font-family: helvetica;
+  font-size: 1.1em;
+}
+
+.rech-av-formu select
+{
+  width: 50%;
+  height: 25px;
+  padding: 0% 0 0 2%;
+  margin: 1%;
+   margin-bottom: 1%;
+  border: 2px solid #fe3600;
+  font-family: helvetica;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+
+/*deuxieme bloc =>éléments de droits*/
+
+#container-elmts-droit
+{
+  
+  display: flex;
+  flex-direction:column;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  /*align-items: stretch;*/
+  /*justify-content: center;*/
+    height: auto;
+    margin: 0 auto;
+    /*background-color: #ed3300;*/
+    /*opacity: 0.5;*/
+    /*border: 1px solid black;*/
+    
+}
+.accordion-elmts-droit
+{
+  width: 100%;
+  margin: 0% 0 0.5% 0;
+  /*height: 50px;*/
+  line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    list-style-type: none;
+    background-color: #ed3300;
+    font-size: 1em;
+    /*border: 1px solid green;*/
+}
+
+.accordion-elmts-droit label
+{
+    display:block;
+    background-color: #ed3300;
+    line-height: 20px;
+    font-weight: 800;
+    /*text-transform: uppercase;*/
+    list-style-type: none;
+    font-size: 0.8em;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    /*border: 1px solid white;*/
+}
+.accordion-elmts-droit h2
+{
+  padding: 0 0 0 2%;
+  line-height: 75px;
+    font-weight: 700;
+    font-family: helvetica;
+    /*border: 1px solid red;*/
+}
+
+.accordion-elmts-droit ul 
+/* remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  text-transform: none;
+  font-size: 1em;
+  display: none;
+  text-align: left;
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+
+#elmts-droit:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  font-family: helvetica;
+  /*border: 1px solid blue;*/
+}
+
+input#elmts-droit
+{
+  display: none;
+  position: relative;
+
+  /*max-width: 20%;*/
+}
+.accordion-elmts-droit form 
+ /*remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  display: none;
+  text-align: left;
+  text-transform: lowercase;
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+.accordion-elmts-droit p
+{
+  text-transform: none;
+  font-size: 1.1em;
+  padding: 1%;
+  font-family: helvetica;
+  
+}
+.accordion-elmts-droit li 
+{
+  font-family: helvetica;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*width: 100%;*/
+  padding: 0.5%;
+}
+.accordion-elmts-droit h3
+{
+  text-transform: uppercase;
+}
+.accordion-elmts-droit a
+{
+  color: #fe3600;
+  font-family: helvetica;
+  /*font-size: 1.2em;*/
+}
+.accordion-elmts-droit a:hover
+{
+  color: black;
+}
+.rech-av-formu-contrib li
+{
+  display:inline;
+
+  margin-left: 4.2%;
+}
+.rech-av-formu-contrib input
+{
+  width: 25%;
+  height: 25px;
+  padding: 0% 0 0 2%;
+  margin: %;
+   margin-bottom: 1%;
+  border: 2px solid #fe3600;
+}
+
+/*elmements techniques*/
+
+#container-elmts-tech
+{
+  
+  display: flex;
+  flex-direction:column;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  /*align-items: stretch;*/
+  /*justify-content: center;*/
+    height: auto;
+    margin: 0 auto;
+    /*background-color: #ed3300;*/
+    /*opacity: 0.5;*/
+    /*border: 1px solid black;*/
+    
+}
+.accordion-elmts-tech
+{
+  width: 100%;
+  margin: 0% 0 0.5% 0;
+  /*height: 50px;*/
+  line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    list-style-type: none;
+    background-color: #ed3300;
+    font-size: 1em;
+    /*border: 1px solid green;*/
+}
+
+.accordion-elmts-tech label
+{
+    display:block;
+    background-color: #ed3300;
+    line-height: 20px;
+    font-weight: 800;
+    /*text-transform: uppercase;*/
+    list-style-type: none;
+    font-size: 0.8em;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    /*border: 1px solid white;*/
+}
+.accordion-elmts-tech h2
+{
+  padding: 0 0 0 2%;
+  line-height: 75px;
+    font-weight: 700;
+    font-family: helvetica;
+    /*border: 1px solid red;*/
+}
+
+.accordion-elmts-tech ul 
+/* remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  text-transform: none;
+  font-size: 1em;
+  display: none;
+  text-align: left;
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+
+#elmts-tech:checked ~ .hiddentext
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  font-family: helvetica;
+  /*border: 1px solid blue;*/
+}
+
+input#elmts-tech
+{
+  display: none;
+  position: relative;
+
+  /*max-width: 20%;*/
+}
+.accordion-elmts-tech form 
+ /*remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  display: none;
+  text-align: left;
+  text-transform: lowercase;
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+.accordion-elmts-tech p
+{
+  text-transform: none;
+  font-size: 1.1em;
+  padding: 1%;
+  font-family: helvetica;
+  
+}
+.accordion-elmts-tech li 
+{
+  font-family: helvetica;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*width: 100%;*/
+  padding: 0.5%;
+}
+.accordion-elmts-tech h3
+{
+  text-transform: uppercase;
+}
+.accordion-elmts-tech a
+{
+  color: #fe3600;
+  font-family: helvetica;
+  /*font-size: 1.2em;*/
+}
+.accordion-elmts-tech a:hover
+{
+  color: black;
+}
+.rech-av-formu-date li
+{
+  display:inline;
+
+  margin-left: 4.2%;
+}
+.rech-av-formu-date input
+{
+  width: 25%;
+  height: 25px;
+  padding: 0% 0 0 2%;
+  margin: %;
+   margin-bottom: 1%;
+  border: 2px solid #fe3600;
+}
+/*______________________________________*/
+.rech-av-formu li
+{
+  padding: 0% 0 0 30%;
+  width: 90%;
+  margin: %;
+  text-transform: none;
+}
+.rech-av-formu input
+{
+  width: 50%;
+  height: 25px;
+  padding: 0% 0 0 2%;
+  margin: 1%;
+  border: 2px solid #fe3600;
+}
+.accordion-rech-av ul 
+/* remplacer <ul> par <p> pour correspondre au html et php*/
+{
+  color: #424242;
+  padding: 10px;
+  line-height: 1.7em;
+  border-top: 5px solid #ed3300;
+  border-left: 5px solid #ed3300;
+  border-right: 5px solid #ed3300;
+  border-bottom: 5px solid #ed3300;
+  font-family: helvetica;
+  visibility: hidden;
+  text-transform: none;
+  font-size: 1em;
+  display: none;
+  text-align: left;
+  background-color: #fff;
+  /*border: 1px solid green;*/
+ 
+}
+
+/*---------PAGE ------------------------*/
+

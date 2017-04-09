@@ -2,7 +2,7 @@
 
 require_once "model/class.php";
 //include_once "../controller/login.php";
-$message = "";
+$messageUser = "";
 if (!empty($_POST)) {
 
     if (isset($_POST["username"]) && isset($_POST["password_first"]) && isset($_POST["password_second"])&& isset($_POST["email"])) {
@@ -12,7 +12,8 @@ if (!empty($_POST)) {
         $stmt->execute();
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             if (strcmp ($row["Username_canonical"], strtolower($_POST["username"])) == 0) {
-                $message= "Ce nom d'utilisateur est déjà utilisé";
+                $messageUser = "Ce nom d'utilisateur est déjà utilisé";
+                require_once "view/newuser.php";
                 exit;
             }
         }
@@ -47,13 +48,16 @@ if (!empty($_POST)) {
 
             }
 
-            $message = $user->message_Succes_Insert();
-            ;
+            $messageUser = $user->message_Succes_Insert();
+            require_once "view/newuser.php";
 
         }
         
     }
 
+} else {
+
+    require_once "view/newuser.php";
 }
 
 ?>

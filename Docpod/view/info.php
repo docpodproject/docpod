@@ -1,13 +1,7 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-	<title>Page d'information</title>
-</head>
-<body>
+<?php require_once "menubar.html" ?>
 
 <p><?php echo $info ?></p>
 
-</body>
-</html>
+
+
+<?php include_once "footer.php" ?>
